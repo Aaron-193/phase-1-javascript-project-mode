@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>TicketSanaa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      text-align: center;
+    }
+    h1 {
+      text-align: left;
+      margin-top: 50px;
+      font-size: 3em;
+      font-style: ;
+    }
+    .buttons {
+      margin: 20px 0;
+    }
+    .buttons button {
+      background: none;
+      border: none;
+      font-size: 1.2em;
+      color: #555;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+    .buttons button:hover {
+      color: #000;
+    }
+    .form-container {
+      display: none;
+      margin-top: 20px;
+    }
+    .form-container.active {
+      display: block;
+      animation: slideDown 0.5s ease;
+    }
+    @keyframes slideDown {
+      from {
+        transform: translateY(-20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    form {
+      display: inline-block;
+      text-align: left;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    input {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+    }
+    .events-section, .about-section {
+      margin: 40px 0;
+      padding: 20px;
+    }
+    .events-section {
+      background-color: #ffd700;
+      color: #000;
+      border-radius: 10px;
+    }
+    .about-section {
+      background-color: #00aaff;
+      color: #fff;
+      padding: 50px;
+    }
+    .footer-text {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    #buyButton {
+    background-color: #FFE548;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    p
+  }
+
+  #emoji {
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+    transition: opacity 1s ease-in-out;
+  }
+
+  body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2, h3 {
+            color: #2c3e50;
+            text-align: center;
+            transition: color 0.3s ease-in-out;
+        }
+
+        h2:hover, h3:hover {
+            color: #e74c3c;
+            text-shadow: 0 0 10px #e74c3c;
+        }
+
+        p {
+            color: #34495e;
+            padding: 10px;
+            margin: 20px auto;
+            width: 80%;
+            background-color: #ecf0f1;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        }
+
+        p:hover {
+            transform: scale(1.05);
+            background-color: #bdc3c7;
+        }
+
+        .flicker {
+            animation: flicker 1.5s infinite;
+        }
+
+        @keyframes flicker {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+  </style>
+</head>
+<body>
+  <h1>Ticket<span class="">Sanaa</span> || Where Magic Happens</h1>
+
+  <div class="buttons">
+    <button id="help">Help</button>
+    <button id="login">Log In</button>
+   </div>
+    <div class="form-container" id="form-container">
+    <form id="loginForm">
+        <label>Surname: <input type="text" id="surname"></label><br><br>
+        <label>First Name: <input type="text" id="firstName"></label><br><br>
+        <label>Email: <input type="email" id="email"></label><br><br>
+        <label>Password: <input type="password" id="password"></label><br><br>
+        <button type="button" id="login">Submit</button>
+    </form>
+  </div>
+
+  <div class="events-section">
+    <h2>Upcoming Events</h2>
+    <p>Here are a sample of Kenya's most exciting lineup of events coming up! Do not miss the magic.</p>
+    <button id="buyButton">Buy Ticket</button>
+    <h2>Upcoming Events in Kenya 2025</h2>
+    <h3>March</h3>
+    <div id="container1"><p class="flicker">Flower Logistics Africa 2025 - March 31, Nairobi
+        A ticket goes for one thousand Kenyan shillings.
+    </p>
+    <img id="flowerLogistics" src="flowerLogisticsimage1.webp" alt="image of event 1"></div>
+    <h3>April</h3>
+    <div><p>Perishable Logistics Africa 2025 - April 1, Nairobi
+        A ticket goes for one thousand one hundred and ten Kenyan shillings.
+    </p>
+    <img src="perishableLogistics.jpeg" alt=""></div>
+    <div class="emergency"><p>Beyond The Body: Mombasa Art Exhibition & Dinner - April 5, Mombasa</p><img src="beyondTheBodyMombasa.jpeg" alt="">
+    <span class="emergency-line">Few tickets left. Grab now!</span></div>
+    <div><p>Kenya-Australia Transnational Education Partnership Summit - April 10, Nairobi</p>
+    <img src="nairobiStudyAbroad.jpeg" alt=""></div>
+    <h3>June</h3>
+    <div class="MEGA"><p class="mega-text">MEGA CLIMA KENYA HVAC+R EXPO - June 18, Nairobi</p>
+    <img id="mega-image" src="megaClimaKenya.jpeg" alt=""></div>
+
+  
+
+  <div class="about-section">
+    <h2>About TicketSanaa</h2>
+    <p>We work to ensure smooth ticket distribution and event coordination, making sure customers have a seamless experience.</p>
+    <p class="footer-text">2025 TicketSanaa Events. All rights reserved.</p>
+  </div>
+
+  <script>
+document.getElementById("login").addEventListener("click", function () {
+    
+    document.getElementById("form-container").style.display = "block";
+});
+
+document.getElementById("save").addEventListener("click", function () {
+    
+    const surname = document.getElementById("surname").value;
+    const firstname = document.getElementById("firstname").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    
+    const formContainer = document.getElementById("form-container");
+    formContainer.innerHTML = `
+        <p>Surname: ${surname}</p>
+        <p>First Name: ${firstname}</p>
+        <p>Email: ${email}</p>
+        <p>Password: ${password}</p>
+        <button id="edit">Edit</button>
+        <button id="delete">Delete</button>
+    `;
+
+    
+    setTimeout(() => {
+        const userData = { surname, firstname, email, password };
+        localStorage.setItem("userData", JSON.stringify(userData));
+    }, 60000);
+
+    
+    alert("Login is successful. Welcome!");
+
+    
+    document.getElementById("edit").addEventListener("click", function () {
+        formContainer.innerHTML = '';
+        document.getElementById("form-container").style.display = "block";
+    });
+
+    
+    document.getElementById("delete").addEventListener("click", function () {
+        localStorage.removeItem("userData");
+        formContainer.innerHTML = '';
+        document.getElementById("form-container").style.display = "none";
+    });
+});
+
+
+window.addEventListener("load", function () {
+    const savedData = localStorage.getItem("userData");
+    if (savedData) {
+        const { surname, firstname, email, password } = JSON.parse(savedData);
+        document.getElementById("form-container").innerHTML = `
+            <p>Surname: ${surname}</p>
+            <p>First Name: ${firstname}</p>
+            <p>Email: ${email}</p>
+            <p>Password: ${password}</p>
+            <button id="edit">Edit</button>
+            <button id="delete">Delete</button>
+        `;
+        document.getElementById("form-container").style.display = "block";
+    }
+});
+
+ocument.getElementById("buyButton").addEventListener("click", function() {
+   
+   alert("Request for a ticket has been made.");
+   
+  
+   const mPesaAccount = "0721337491";
+   const cost = "1000 ksh";
+   alert(`M-pesa Account Number: ${mPesaAccount}\nCost: ${cost}`);
+   
+
+   setTimeout(function() {
+       alert("Transaction successful. Ticket costing 1000 ksh has been purchased. Enjoy!");
+   }, 45000); 
+});
+
+
+window.addEventListener('load', () => {
+  const savedDetails = JSON.parse(localStorage.getItem('userDetails'));
+  if (savedDetails) {
+    document.getElementById('surname').value = savedDetails.surname;
+    document.getElementById('firstName').value = savedDetails.firstName;
+    document.getElementById('email').value = savedDetails.email;
+    document.getElementById('password').value = savedDetails.password;
+  }
+});
+  
+d
+
+</body>
+</html>

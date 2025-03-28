@@ -1,0 +1,18 @@
+{
+  "siteTitle": "TicketSanaa",
+  "buttons": ["Help", "Log In", "Sign Up"],
+  "emailRedirect": "info@ticketSanaa.co.ke",
+  "events": [
+    {
+      "name": "Concert Night",
+      "date": "2025-04-15",
+      "location": "Nairobi"
+    },
+    {
+      "name": "Art Workshop",
+      "date": "2025-05-10",
+      "location": "Mombasa"
+    }
+  ],
+  "about": "Ticket Agents are the key to ensuring smooth event transactions, managing tickets, and supporting attendees. 2025 TicketSanaa Events. All rights reserved."
+}
